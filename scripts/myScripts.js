@@ -25,22 +25,29 @@ function pipeLearn() {
 const URL = "https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&format=txt";
 
 const jokeBtn = document.getElementById("getJoke");
+
+if(Notification.permission== "granted"){
+  Notification.requestPermission().then((permission) => {
+    console.log("Notification permission:", permission)
+  });
+  
+}
+
 jokeBtn.addEventListener("click", async () => {
 
     const joke = await fetchData("");
     if (joke) {
         displayDataInConsole(joke);
 
-        Notification.requestPermission().then((permission) =>{
           if(Notification.permission== "granted"){
           new Notification("Programming Joke", { body: joke });
         }
         else{
           console.log("Notification permission not granted")
         }
-        });     
+        }   
     }
-});
+);
 
 async function fetchData() {
 
