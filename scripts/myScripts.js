@@ -30,7 +30,14 @@ jokeBtn.addEventListener("click", async () => {
     const joke = await fetchData("");
     if (joke) {
         displayDataInConsole(joke);
-        new Notification("Programming Joke", { body: joke });
+
+        if(Notification.permission== "granted"){
+          new Notification("Programming Joke", { body: joke });
+        }
+        else{
+          console.log("Notification permission not granted")
+        }
+        
     }
 
 });
