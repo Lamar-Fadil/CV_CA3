@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/08a6076b2a.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-main">
+    <div class="container">
+
+
+        <nav id="navbar-main" class="navbar px-3 fixed-top">
+            <a id="homeName" class="navbar-brand" href="#intro">Lamar Fadil's Resume</a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link-top" href="#intro">Intro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link-top" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link-top" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link-top" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link-top" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link-top" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link-top" href="#activities">Activities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link-top" href="#contacts">Contacts</a>
+                </li>
+            </ul>
+
+            <form action="http://www.google.com/search" method="get">
+                <fieldset>
+                    <input type="hidden" name="sitesearch" value="">
+                    <input type="text" name="q" size="31" maxlength="255" value="" class="search-bar">
+                    <input type="submit" value="search" class="search-button">
+                </fieldset>
+            </form>
+        </nav>
+
+        <div class="dot-nav" id="dot-nav">
+            <a class="nav-link" href="#intro" data-bs-toggle="tooltip" data-bs-placement="left" title="Intro"></a>
+            <a class="nav-link" href="#about" data-bs-toggle="tooltip" data-bs-placement="left" title="About"></a>
+            <a class="nav-link" href="#education" data-bs-toggle="tooltip" data-bs-placement="left"
+                title="Education"></a>
+            <a class="nav-link" href="#projects" data-bs-toggle="tooltip" data-bs-placement="left" title="Projects"></a>
+            <a class="nav-link" href="#experience" data-bs-toggle="tooltip" data-bs-placement="left"
+                title="Experience"></a>
+            <a class="nav-link" href="#skills" data-bs-toggle="tooltip" data-bs-placement="left" title="Skills"></a>
+            <a class="nav-link" href="#activities" data-bs-toggle="tooltip" data-bs-placement="left"
+                title="Activities"></a>
+            <a class="nav-link" href="#contacts" data-bs-toggle="tooltip" data-bs-placement="left" title="Contacts"></a>
+        </div>
+
+        <section id="intro" class="intro-sec">
+            <img class="intro-img img-fluid" src="images/farm.png" alt="farm" />
+            <div class="intro-content">
+                <h1 class="intro-name">Lamar Fadil</h1>
+                <a href="https://github.com/Lamar-Fadil" target="_blank"><img class="logo-img-intro-g img-fluid"
+                        src="images/GitHub.webp" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/lamar-fadil/" target="_blank"><img class="logo-img-intro-l img-fluid"
+                        src="images/linkedin.png" alt="linkedin"></a>
+                
+                <h2 class="intro-name2">Welcome to my Resume</h2>
+                <button id="getJoke" class="intro-btn-joke btn">Click me</button>
+
+                <button type="button" class="btn intro-btn" data-bs-toggle="modal" data-bs-target="#modal">
+                    Quick Contact
+                </button>
+
+                <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <form action="">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalLabel">Quick Contact</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-group col-md-5">
+                                        <div class="input-label">
+                                            <label for="inputName">Name</label>
+                                            <input type="name" class="form-control" id="inputName">
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <div class="input-label">
+                                            <label for="inputEmail4">Email*</label>
+                                            <input type="email" class="form-control" id="inputEmail" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group col-md-10">
+                                        <div class="input-label-msg">
+                                            <label for="inputAddress">Message*</label>
+                                            <textarea name="message" id="message" class="form-control"
+                                                required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn carousel-btn btn-sm"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" class="carousel-btn btn btn-sm">Submit</button>
+                                </div>
+                            </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h1 class="section-title font-weight-bold text-center display-3">About me</h1>
+        
+            <img class="about-image img-fluid ms-5 float-start rounded" src="images/about-me.jpg" alt="about me pic">
+            <div class="about-text">
+                <strong>Hello 👋 I'm Lamar, a computing student passionate about AI, data analysis, and building clean,
+                    functional apps</strong>
+                <br><br><br>
+                <ul>
+                    <p>📈 Interested in Machine Learning and Database Engineering</p>
+                    <br>
+                    <p>🎓 Computing student at TU Dublin</p>
+                    <br>
+                    <p>👩‍💻 Experienced in Java, data modelling, Networking </p>
+                    <br>
+                    <p>💡 Strong background with public speaking, and working in Agile environments</p>
+                </ul>
+            </div>
+
+        </section>
+
+        <section id="education">
+            <h1 class="section-title font-weight-bold text-center display-3">Education</h1>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-3">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <div class="card">
+                                        <img src="images/tud.webp" class="card-img-top img-fluid" alt="Front Image">
+                                    </div>
+                                </div>
+                                <div class="flip-card-back">
+                                    <div class="card">
+
+                                        <div class="card-body">
+                                            <h5 class="card-title">Technological University Dublin</h5>
+                                            <p class="card-text">
+                                                TU Dublin is a leader in STEM disciplines, the University also
+                                                supports the largest cohort of students of business, media, culinary
+                                                arts, and the creative and performing arts. The computing programmes are
+                                                created in close collaboration with industry and incorporates practical
+                                                learning
+                                                with real-world projects. By combining technical skill, critical
+                                                thinking, and flexibility, graduates are prepared for
+                                                technological challenges and
+                                                innovations. <br>
+                                                <a class="card-text" href="https://www.tudublin.ie"
+                                                    target="_blank">Click to
+                                                    Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <p>
+                    <button class="btn grade-btn btn-sm" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Course Info
+                    </button>
+                </p>
+                <div class="acord-section collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <div class="col-12 mx-auto">
+                            <br><br>
+                            <h4>Computing with Machine Learning / Artificial Intelligence</h4>
+                            <br>
+                            <ul>
+                                <li>
+                                    A four-year degree course
+                                </li>
+                                <li>
+                                    Designed in consultation with industry leaders such as
+                                    Amazon AWS, Microsoft, and IBM
+                                </li>
+                                <li>
+                                    Provides a unique mix of Computing, Business
+                                    Intelligence and Data Science skills
+                                </li>
+                                <li>
+                                    A six-month long internship was undertaken in Year 3 as part of the course
+                                </li>
+                            </ul>
+                            <p class="text-center">
+                                <strong>Below, you will find modules taken during college along with their corresponding
+                                    grades:</strong>
+                            </p>
+                            <p class="text-center">
+                                <strong>GPA: </strong> 3.76 / 4
+                            </p>
+                            <br>
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <button class="nav-years active" id="nav-first-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-first" type="button" role="tab" aria-controls="nav-first"
+                                        aria-selected="true">4th
+                                        Year</button>
+
+                                    <button class="nav-years" id="nav-second-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-second" type="button" role="tab" aria-controls="nav-second"
+                                        aria-selected="true">3rd
+                                        Year</button>
+
+                                    <button class="nav-years" id="nav-third-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-third" type="button" role="tab" aria-controls="nav-third"
+                                        aria-selected="false">2nd Year</button>
+
+                                    <button class="nav-years" id="nav-fourth-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-fourth" type="button" role="tab" aria-controls="nav-fourth"
+                                        aria-selected="true">1st Year</button>
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-first" role="tabpanel"
+                                    aria-labelledby="nav-first-tab">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Module</th>
+                                                <th>Grade</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Applied Machine
+                                                    Learning</td>
+                                                <td>TBD</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Data Analysis
+                                                    and
+                                                    Programming</td>
+                                                <td>TBD</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Data
+                                                    Visualisation</td>
+                                                <td>TBD</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Final Year Project</td>
+                                                <td>TBD</td>
+                                            </tr>
+                                            <tr>
+                                                <td>DevOps</td>
+                                                <td>TBD</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Computational
+                                                    Linguistics</td>
+                                                <td>TBD</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="tab-pane fade" id="nav-second" role="tabpanel"
+                                    aria-labelledby="nav-second-tab">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Module</th>
+                                                <th>Grade</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Server-Side Web Development</td>
+                                                <td>A</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Big Data Technologies</td>
+                                                <td>A</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Operating Systems</td>
+                                                <td>A</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cloud and Infrastructure</td>
+                                                <td>B+</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Data Analysis</td>
+                                                <td>B+</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Data Structures and Algorithms</td>
+                                                <td>B</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="tab-pane fade" id="nav-third" role="tabpanel"
+                                    aria-labelledby="nav-third-tab">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Module</th>
+                                                <th>Grade</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Software Development 3</td>
+                                                <td>A</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cyber Security</td>
+                                                <td>A</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Networking</td>
+                                                <td>A</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Advanced Database Tech</td>
+                                                <td>A</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Discrete Mathematics 2</td>
+                                                <td>A</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Software Quality</td>
+                                                <td>A</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="tab-pane fade" id="nav-fourth" role="tabpanel"
+                                    aria-labelledby="nav-fourth-tab">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Module</th>
+                                                <th>Grade</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Software Development 1</td>
+                                                <td>A</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Statistics </td>
+                                                <td>A</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Critical Skills</td>
+                                                <td>A</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Business & Info Systems</td>
+                                                <td>A</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Discrete Mathematics 1</td>
+                                                <td>A</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Computer Architecture </td>
+                                                <td>B+</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <button type="button" class="btn-close grade-btn btn-sm" aria-label="Close" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="projects">
+            <h1 class="section-title font-weight-bold text-center display-3">Projects</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="proj-carousel">
+
+                        <div id="projectsCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+
+                            <ol class="carousel-indicators">
+                                <li data-bs-target="#projectsCarousel" data-bs-slide-to="0" class="active"></li>
+                                <li data-bs-target="#projectsCarousel" data-bs-slide-to="1"></li>
+                                <li data-bs-target="#projectsCarousel" data-bs-slide-to="2"></li>
+                                <li data-bs-target="#projectsCarousel" data-bs-slide-to="3"></li>
+                            </ol>
+
+
+                            <div class="carousel-inner">
+
+                                <div class="carousel-item active" data-bs-interval="2000">
+                                    <img src="images/ecom.jpg" class="img-carousel d-block w-100 rounded img-fluid" alt="ecom">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="carousel-text">Django-Based E-commerce Website</h5>
+                                        <button type="button" class="carousel-btn btn btn-sm"
+                                            onclick="ecomLearn()">Learn
+                                            More</button>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="images/credit.png" class="img-carousel d-block w-100 rounded img-fluid"
+                                        alt="credit-card">
+
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="carousel-text">Credit Card Fraud Analysis</h5>
+                                        <button type="button" class="carousel-btn btn btn-sm"
+                                            onclick="creditLearn()">Learn
+                                            More</button>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="images/vis.png" class="img-carousel d-block w-100 rounded img-fluid" alt="resume">
+
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="carousel-text">Tableau Visualisation</h5>
+                                        <button type="button" class="carousel-btn btn btn-sm" onclick="visLearn()">Learn
+                                            More</button>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="images/pipeline.png" class="img-carousel d-block w-100 rounded img-fluid"
+                                        alt="pipeline">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="carousel-text">Azure DevOps Pipeline</h5>
+                                        <button type="button" class="carousel-btn btn btn-sm"
+                                            onclick="pipeLearn()">Learn
+                                            More</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <a class="carousel-control-prev" href="#projectsCarousel" role="button"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </a>
+
+                            <a class="carousel-control-next" href="#projectsCarousel" role="button"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </a>
+                        </div>
+                    </div>
+        </section>
+
+        <section id="experience">
+            <h1 class="section-title font-weight-bold text-center display-3">Experience</h1>
+            <br>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="work-flip-card">
+                            <div class="work-flip-card-inner">
+                                <div class="work-flip-card-front">
+                                    <div class="card">
+                                        <img src="images/fidelity.jpg" class="work-card-img-top img-fluid" alt="Front Image">
+                                    </div>
+                                </div>
+                                <div class="flip-card-back">
+                                    <div class="card">
+
+                                        <div class="card-body">
+                                            <h5 class="work-card-title">My Time at Fidelity</h5>
+                                            <p class="work-card-text">
+                                                During my 7 month placement at Fidelity Investments, I was working as a
+                                                full-stack software engineer in an Agile team.
+                                                I spent my placement under the Institutional Wealth Management Services
+                                                business unit and mainly worked on the website "Wealthscape",
+                                                where I took part in implementing front-end features, API handling, and
+                                                more.
+                                                I also got hands-on experience with AngularJS, Insomnia, Springboot,
+                                                sprint planning and facilitating, and business/systems analysis
+                                            </p>
+                                            <a class="card-text"
+                                                href="https://jobs.fidelity.com/ie/early-career/internships/"
+                                                target="_blank">Click to
+                                                Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="acord-section acord-div accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseOne">
+                                        Intern project
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="panelsStayOpen-headingOne">
+                                    <div class="accordion-body">
+                                        <img src="images/proj.png" alt="" class="drop-img col-md-10 img-fluid">
+                                        <br><br>
+                                        <p>
+                                            A project created in collaboration between tech and business interns for the
+                                            organisation <strong>Elephant in the Room</strong>.
+                                            Over the course of 3 months, our team created a new marketing strategy for
+                                            Elephant in the Room across all of their social media platforms.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseTwo">
+                                        Volunteering
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingTwo">
+                                    <div class="accordion-body">
+                                        <img src="images/volunteer.WEBP" alt="" class="drop-img col-md-10 img-fluid">
+                                        <br><br>
+                                        <p>
+                                            Took part in the annual <strong>Fidelity Cares</strong> month activities.
+                                            For this event we hosted a STEM activity for a local school,
+                                            where the students learned about renewable electricity, and made their own
+                                            wind-turbine models.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                    <button class="accordion-button collapsed img-fluid" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseThree">
+                                        Stakeholder Demos
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingThree">
+                                    <div class="accordion-body">
+                                        <img src="images/demo.PNG" alt="" class="drop-img col-md-10 img-fluid">
+                                        <br><br>
+                                        <p>
+                                            Presented demos to stakeholders where I went through newly developed
+                                            features and answered questions.
+                                            <strong>In preparation</strong> for the demos, I worked alongside our sprint
+                                            facilitator and coordinated with developers and analysts to create an agenda
+                                            for each demo.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h1 class="section-title font-weight-bold text-center display-3">Skills</h1>
+            <div class="row">
+
+                <div class="prog progress">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    <p><strong>Public Speaking</strong></p>
+                </div>
+
+                <div class="prog progress">
+                    <div class="progress-bar bg-green" role="progressbar" style="width: 70%" aria-valuenow="70"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    <p><strong>Leadership</strong></p>
+                </div>
+
+                <div class="prog progress">
+                    <div class="progress-bar bg-green" role="progressbar" style="width: 65%" aria-valuenow="65"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    <p><strong>Back-end Development</strong></p>
+                </div>
+
+                <div class="prog progress">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 55%" aria-valuenow="55"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    <p><strong>Front-end Development</strong></p>
+                </div>
+
+                <div class="prog progress">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    <p><strong>SQL</strong></p>
+                </div>
+
+                <div class="prog progress">
+                    <div class="progress-bar bg-green" role="progressbar" style="width: 80%" aria-valuenow="80"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    <p><strong>Data Analysis</strong></p>
+                </div>
+
+                <div class="prog progress">
+                    <div class="progress-bar bg-green" role="progressbar" style="width: 60%" aria-valuenow="60"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    <p><strong>Operating Systems</strong></p>
+                </div>
+
+                <div class="prog progress">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    <p><strong>Data Structures and Algorithms</strong></p>
+                </div>
+
+                <div class="prog progress">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    <p><strong>Cybersecurity</strong></p>
+                </div>
+
+                <div class="prog progress">
+                    <div class="progress-bar bg-green" role="progressbar" style="width: 70%" aria-valuenow="70"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    <p><strong>Machine Learning</strong></p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="activities">
+            <h1 class="section-title font-weight-bold text-center display-3">Extra Activities</h1>
+            <select id="gallerySelect" class="gal-select form-select" aria-label="Default select example"
+                onchange="showGalleryImages()" style="max-width: 20em;">
+                <option selected>Select Activity</option>
+                <option value="1">All</option>
+                <option value="2">Student Ambassador</option>
+                <option value="3">Hackathons</option>
+                <option value="4">Events</option>
+            </select>
+            <br>
+            <div class="row">
+                <div id="StudentAmbassador" class="col-md-3">
+                    <h6 class="gal-text">Ambassador</h6>
+                    <div class="gal-img row row-cols-1">
+                        <div class="col">
+                            <img src="images/amb.jpg" class="img-fluid rounded" alt="Gallery 1"
+                                onclick="showImage(event);"
+                                data-desc="First time being a TUD ambassador for orientations">
+                        </div>
+                        <div class="col">
+                            <img src="images/lead.jpg" class="img-fluid rounded" alt="Gallery 2"
+                                onclick="showImage(event);" data-desc="Became a lead ambassador!">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Hackathons" class="col-md-3">
+                    <h6 class="gal-text">Hackathons</h6>
+                    <div class="gal-img row row-cols-1">
+                        <div class="col">
+                            <img src="images/health.jpg" class="img-fluid rounded" alt="Gallery 3"
+                                onclick="showImage(event);"
+                                data-desc="Participated in the Health Hackathon hosted by AWS, TUH, and TU Dublin">
+                        </div>
+                        <div class="col">
+                            <img src="images/nfl.jpg" class="img-fluid rounded" alt="Gallery 4"
+                                onclick="showImage(event);" data-desc="Took part in the NFL Big Data Bowl hackthon">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Events" class="col-md-3">
+                    <h6 class="gal-text">Events</h6>
+                    <div class="gal-img row row-cols-1">
+                        <div class="col">
+                            <img src="images/aws.jpg" class="img-fluid rounded" alt="Gallery 5"
+                                onclick="showImage(event);" data-desc="Attended the AWS re:Invent re:Cap Event">
+                        </div>
+                        <div class="col">
+                            <img src="images/collab.jpg" class="img-fluid rounded" alt="Gallery 6"
+                                onclick="showImage(event);"
+                                data-desc="Attended a cross-collaboration event for tech and business interns">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="galleryModal">
+                    <div class="modal-dialog modal-dialog-centered modal-md">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="" class="modal-img" alt="Modal Image">
+                                <p id="modalDesc"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="contacts">
+            <h1 class="section-title font-weight-bold text-center display-3">Reach Out</h1>
+            <br>
+            <div class="row">
+                <div class="contact-info col-md-5">
+                    <br>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2546.392325592072!2d-6.3660300230972515!3d53.29107937227335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670b4b8ec071f5%3A0xb6cf7501e0d9522a!2sTU%20Dublin%2C%20Tallaght!5e1!3m2!1sen!2sie!4v1765286530852!5m2!1sen!2sie"
+                        width="370" height="270" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" class="rounded"></iframe>
+                    <p><i class="contacts fa-solid fa-envelope"></i> lamar.aiman@hotmail.com</p>
+                    <p><i class="contacts2 fa-solid fa-phone"></i> 0831382918</p>
+                    <a href="https://github.com/Lamar-Fadil" target="_blank"><img class="logo-img img-fluid"
+                            src="images/GitHub.webp" alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/in/lamar-fadil/" target="_blank"><img class="logo-img2 img-fluid"
+                            src="images/linkedin.png" alt="linkedin"></a>
+                </div>
+                <div class="col-md-6">
+                    <br>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-5">
+                                <div class="input-label">
+                                    <label for="inputName">Name</label>
+                                    <input type="name" class="form-control" id="inputName">
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <div class="input-label">
+                                    <label for="inputEmail4">Email*</label>
+                                    <input type="email" class="form-control" id="inputEmail" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-md-10">
+                                <div class="input-label-msg">
+                                    <label for="inputAddress">Message*</label>
+                                    <textarea name="message" id="message" class="form-control" required></textarea>
+                                </div>
+                            </div>
+
+                            <br>
+                            <button type="submit" class="form-btn btn btn-sm">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+        <br><br>
+        <a href="components.html" class="comp-link">Link to components used</a>
+        <br><br>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="scripts/myScripts.js"></script>
+
+</body>
+
+</html>
