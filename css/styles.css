@@ -193,6 +193,7 @@ section {
 .card-img-top {
 	max-height: 350px;
 	object-fit: cover;
+    width: 100%;
 }
 
 .card-text {
@@ -247,6 +248,7 @@ section {
 .img-carousel {
     width:  100px;
     height: 400px;
+    object-fit: cover;
 }
 
 .work-flip-card {
@@ -290,6 +292,7 @@ section {
 .work-card-img-top {
 	max-height: 350px;
 	object-fit: cover;
+    width: 100%;
 }
 
 .work-card-text {
